@@ -11,9 +11,9 @@ fn main() {
             break;
         }
 
-        match trimmed_number.parse::<i32>() {
+        match trimmed_number.parse::<i128>() {
             Ok(num) => {
-                if num > 0 {
+                if num >= 0 {
                     sum_of_numbers += num;
                 } else {
                     println!("NaN");
